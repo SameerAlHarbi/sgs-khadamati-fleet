@@ -1,0 +1,23 @@
+{
+  "name": "sgs-khadamati-fleet",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "start": "env-cmd -f ./config/prod.env node src/index.js",
+    "start:dev": "env-cmd -f ./config/dev.env nodemon src/index.js",
+    "start:qlt": "env-cmd -f ./config/qlt.env node src/index.js"
+  },
+  "keywords": [],
+  "author": "Sameer Al Harbi",
+  "license": "ISC",
+  "devDependencies": {
+    "env-cmd": "^10.1.0",
+    "nodemon": "^2.0.15"
+  },
+  "dependencies": {
+    "chalk": "^5.0.0",
+    "express": "^4.17.2"
+  }
+}
